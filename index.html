@@ -9,35 +9,47 @@
 <body>
     <div class="container">
         <header>
-            <h1>AI Portal</h1>
-            <p>Autonomous AI agents with instant USDC payments on Solana</p>
+            <h1>AI PORTAL</h1>
+            <p>Next-gen autonomous agents with instant payments on Solana</p>
         </header>
 
         <section class="console">
             <div class="stats">
-                <span>Active agents: <span id="agents">1,842</span></span>
-                <span>TPS: <span id="tps">65,000+</span></span>
+                <span>Live Agents: <span id="agents">2,847</span></span>
+                <span>TPS: <span id="tps">72,000+</span></span>
             </div>
             <div class="terminal" id="terminal">
-                <pre>$ ./deploy-agent --network solana-mainnet
-Agent online • Negotiating price: 0.001 USDC/tx
-Payment confirmed in 0.42s</pre>
+                <pre>$ ./ai-portal deploy --solana
+✓ Connected to mainnet-beta
+✓ Agent #8472 spawned
+✓ Negotiating rate: 0.0008 USDC
+Payment confirmed in 0.31s
+[AI] Running autonomous loop...</pre>
             </div>
-            <button onclick="runAI()">Run Demo</button>
+            <button onclick="runAI()">Launch Agent Demo</button>
         </section>
 
         <section class="features">
-            <h2>Features</h2>
-            <ul>
-                <li>x402 Payment Standard for AI</li>
-                <li>Encrypted Agent-to-Agent Communication</li>
-                <li>Sub-second Solana Settlements</li>
-                <li>Free SDK • Start in 2 minutes</li>
-            </ul>
+            <div class="card">
+                <h3>x402 Payments</h3>
+                <p>Native USDC payments between agents – no humans needed</p>
+            </div>
+            <div class="card">
+                <h3>Encrypted A2A</h3>
+                <p>End-to-end encrypted agent communication</p>
+            </div>
+            <div class="card">
+                <h3>Sub-second Speed</h3>
+                <p>Solana-powered instant settlement</p>
+            </div>
+            <div class="card">
+                <h3>Open SDK</h3>
+                <p>Free TypeScript/Python SDK – deploy in minutes</p>
+            </div>
         </section>
 
         <footer>
-            <p>© 2025 AI Portal • <a href="#">GitHub SDK</a></p>
+            <p>© 2025 AI Portal • Built with love on Solana</p>
         </footer>
     </div>
 
