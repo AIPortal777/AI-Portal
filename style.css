@@ -1,13 +1,33 @@
-body { background:#0a0a0a; color:#00ff99; font-family:'Courier New',monospace; margin:0; }
-.container { max-width:900px; margin:40px auto; padding:20px; }
-header { text-align:center; padding-bottom:30px; border-bottom:1px solid #333; }
-h1 { font-size:3em; margin:0; color:#fff; }
-p { color:#aaa; font-size:1.3em; }
-.console { background:#111; padding:25px; border-radius:12px; margin:40px 0; border:1px solid #333; }
-.stats { display:flex; justify-content:space-between; font-weight:bold; margin-bottom:15px; color:#00ff99; }
-.terminal { background:#000; padding:20px; height:180px; overflow:auto; border:1px solid #333; white-space:pre-wrap; }
-button { background:#00ff99; color:#000; border:none; padding:14px 28px; font-size:1.1em; cursor:pointer; margin-top:15px; border-radius:6px; }
-button:hover { background:#00cc77; }
-.features ul { list-style:none; padding:0; }
-.features li { padding:12px 0; border-bottom:1px solid #333; }
-footer { text-align:center; color:#666; margin-top:60px; }
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto+Mono:wght@300;400&display=swap');
+
+body {
+    background: linear-gradient(135deg, #0f001a, #1a0033);
+    color: #e0d0ff;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+header {
+    text-align: center;
+    padding: 60px 0;
+}
+
+h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 4.5em;
+    background: linear-gradient(90deg, #9d4edd, #c77dff, #e0aaff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+}
+
+header p {
+    font-size:
