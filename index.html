@@ -3,55 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Portal | Autonomous Agents on Solana</title>
+    <title>AI Portal – Autonomous Payments for AI Agents</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>AI PORTAL</h1>
-            <p>Next-gen autonomous agents with instant payments on Solana</p>
-        </header>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-left">
+            <img src="logo.png" alt="Logo" class="logo" onerror="this.style.display='none'">
+            <span class="brand">AI Portal</span>
+        </div>
+        <div class="nav-links">
+            <a href="#">Protocol</a>
+            <a href="#">Modules</a>
+            <a href="#">Architecture</a>
+            <a href="#">Pricing</a>
+            <a href="#">FAQ</a>
+        </div>
+        <div class="nav-right">
+            <a href="#" class="docs">Docs</a>
+            <a href="#" class="btn-primary">Launch Console</a>
+        </div>
+    </nav>
 
-        <section class="console">
-            <div class="stats">
-                <span>Live Agents: <span id="agents">2,847</span></span>
-                <span>TPS: <span id="tps">72,000+</span></span>
-            </div>
-            <div class="terminal" id="terminal">
-                <pre>$ ./ai-portal deploy --solana
-✓ Connected to mainnet-beta
-✓ Agent #8472 spawned
-✓ Negotiating rate: 0.0008 USDC
-Payment confirmed in 0.31s
-[AI] Running autonomous loop...</pre>
-            </div>
-            <button onclick="runAI()">Launch Agent Demo</button>
-        </section>
+    <main class="hero">
+        <div class="grid-bg"></div>
 
-        <section class="features">
-            <div class="card">
-                <h3>x402 Payments</h3>
-                <p>Native USDC payments between agents – no humans needed</p>
-            </div>
-            <div class="card">
-                <h3>Encrypted A2A</h3>
-                <p>End-to-end encrypted agent communication</p>
-            </div>
-            <div class="card">
-                <h3>Sub-second Speed</h3>
-                <p>Solana-powered instant settlement</p>
-            </div>
-            <div class="card">
-                <h3>Open SDK</h3>
-                <p>Free TypeScript/Python SDK – deploy in minutes</p>
-            </div>
-        </section>
+        <div class="badge console-badge">AGENT CONTROL CONSOLE</div>
+        <div class="badge agents-badge">AGENTS: <span id="agents">1,247</span> ACTIVE</div>
 
-        <footer>
-            <p>© 2025 AI Portal • Built with love on Solana</p>
-        </footer>
-    </div>
+        <h1>
+            Autonomous<br>
+            <span class="gradient-text">Payments for<br>Intelligent AI Agents</span>
+        </h1>
+
+        <p class="subtitle">
+            A hyper-fast x402 execution layer that lets AI agents negotiate,<br>
+            communicate, and settle USDC payments on Solana — without human intervention.
+        </p>
+
+        <div class="buttons">
+            <a href="#" class="btn-primary large">Launch Console →</a>
+            <a href="#" class="btn-secondary">View Docs</a>
+        </div>
+
+        <div class="tags">
+            <span>Sub-second Settlement</span>
+            <span>x402 Payment Protocol</span>
+            <span>USDC Micropayments</span>
+            <span class="tps">TPS: 65,000+</span>
+        </div>
+
+        <!-- Animated globe -->
+        <div class="globe">
+            <div class="orbit"></div>
+            <div class="orbit"></div>
+            <div class="orbit"></div>
+            <div class="center">A2A</div>
+        </div>
+    </main>
 
     <script src="script.js"></script>
 </body>
