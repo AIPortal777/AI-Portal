@@ -3,49 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Portal – Autonomous Payments for AI Agents</title>
+    <title>AI Portal – Autonomous AI Agents on Solana</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@solana/web3.js@1.91.7/dist/index.iife.min.js"></script>
+    <script src="https://unpkg.com/@solana/wallet-adapter-phantom@latest/dist/umd/index.min.js"></script>
 </head>
 <body>
-    <!-- Navigation -->
+
+    <!-- NAVIGATION -->
     <nav class="nav">
         <div class="nav-left">
             <img src="logo.png" alt="Logo" class="logo" onerror="this.style.display='none'">
             <span class="brand">AI Portal</span>
         </div>
         <div class="nav-links">
-            <a href="#">Protocol</a>
-            <a href="#">Modules</a>
-            <a href="#">Architecture</a>
-            <a href="#">Pricing</a>
-            <a href="#">FAQ</a>
+            <a href="#features">Features</a>
+            <a href="#architecture">Architecture</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#faq">FAQ</a>
         </div>
         <div class="nav-right">
             <a href="#" class="docs">Docs</a>
-            <a href="#" class="btn-primary">Launch Console</a>
+            <button id="connect-wallet" class="btn-primary">Connect Wallet</button>
         </div>
     </nav>
 
-    <main class="hero">
+    <!-- HERO SECTION -->
+    <section class="hero">
         <div class="grid-bg"></div>
-
         <div class="badge console-badge">AGENT CONTROL CONSOLE</div>
         <div class="badge agents-badge">AGENTS: <span id="agents">1,247</span> ACTIVE</div>
 
-        <h1>
-            Autonomous<br>
-            <span class="gradient-text">Payments for<br>Intelligent AI Agents</span>
-        </h1>
-
+        <h1>Autonomous<br><span class="gradient-text">Payments for<br>Intelligent AI Agents</span></h1>
         <p class="subtitle">
             A hyper-fast x402 execution layer that lets AI agents negotiate,<br>
             communicate, and settle USDC payments on Solana — without human intervention.
         </p>
 
         <div class="buttons">
-            <a href="#" class="btn-primary large">Launch Console →</a>
-            <a href="#" class="btn-secondary">View Docs</a>
+            <a href="#console" class="btn-primary large">Launch Console</a>
+            <a href="#docs" class="btn-secondary">View Docs</a>
         </div>
 
         <div class="tags">
@@ -55,15 +53,32 @@
             <span class="tps">TPS: 65,000+</span>
         </div>
 
-        <!-- Animated globe -->
         <div class="globe">
             <div class="orbit"></div>
             <div class="orbit"></div>
             <div class="orbit"></div>
             <div class="center">A2A</div>
         </div>
-    </main>
+    </section>
 
-    <script src="script.js"></script>
-</body>
-</html>
+    <!-- FEATURES -->
+    <section id="features" class="section">
+        <h2>Why AI Portal</h2>
+        <div class="cards">
+            <div class="card">x402 Payments<br><small>Native USDC micropayments between agents</small></div>
+            <div class="card">Encrypted A2A<br><small>End-to-end secure agent communication</small></div>
+            <div class="card">Solana Speed<br><small>Sub-second finality, 65k+ TPS</small></div>
+            <div class="card">Open SDK<br><small>Free TypeScript & Python SDKs</small></div>
+        </div>
+    </section>
+
+    <!-- ARCHITECTURE + PRICING + FAQ (trumpai) -->
+    <section id="architecture" class="section dark">
+        <h2>Architecture</h2>
+        <p style="text-align:center; font-size:1.4em; color:#b19cd9;">
+            Solana → x402 Layer → Encrypted Agent Runtime → Autonomous Execution
+        </p>
+    </section>
+
+    <section id="pricing" class="section">
+        <h2
